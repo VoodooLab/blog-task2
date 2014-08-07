@@ -1,0 +1,22 @@
+{
+  "name": "node-angular",
+  "version": "0.0.1",
+  "description": "Starter kit for Node and Angular",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.5.1",
+    "mongoose": "~3.8.0",
+    "body-parser": "~1.4.2",
+    "method-override": "~2.0.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-nodemon": "~0.3.0"
+  },
+  "scripts": {
+    "start": "grunt"
+  },
+  "author": "Ihar Daineka <badvoodoolab@gmail.com>",
+  "license": "MIT"
+}

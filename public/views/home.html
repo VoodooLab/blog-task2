@@ -1,0 +1,14 @@
+<div>
+	<div class="navbar-header">
+		<a class="navbar-brand" href="" ng-click="changeState()">Add Post</a>
+	</div>
+	
+	<popup ng-show="isVisible"></popup>
+
+	<div class="jumbotron list-group">
+		<div class="list-group-item" ng-repeat="post in posts | orderBy:'createdOn'">  
+			<post-body></post-body>
+		</div>
+	</div>
+
+</div>

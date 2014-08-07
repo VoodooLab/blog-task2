@@ -1,0 +1,8 @@
+<div>
+	<img ng-src="{{post.img}}" alt="image for this post">
+	<h2>{{post.title}}</h2>
+	<cite>created by <strong>{{post.author}}</strong> on {{post.createdOn | date}}</site>
+	<p class="text">{{post.text}}</p>
+	<a ng-click="deletePost($index)">delete this post</a>
+</div>
+
