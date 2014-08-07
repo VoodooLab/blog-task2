@@ -1,2 +1,7 @@
-starter-template-for-node-angular-apps
-======================================
+for start app need:
+
+npm install
+bower install
+grunt
+
+and open http://localhost:8080 
