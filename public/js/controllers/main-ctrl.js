@@ -1,6 +1,5 @@
 angular.module('MainCtrl', []).controller('MainController', ['$scope', 'Posts', function($scope, Posts) {
 
-
 	Posts.get().success(function (data) {
   		$scope.posts = data;
   	});
@@ -13,10 +12,17 @@ angular.module('MainCtrl', []).controller('MainController', ['$scope', 'Posts', 
 	};
 
 	$scope.addPost = function () {
-		$scope.post.createdOn = Date.now();
+		$scope.post.date = Date.now();
+		Posts.create($scope.post);
 		$scope.posts.push($scope.post);
 		$scope.post = {};
 		$scope.changeState();
 	};
-	
+
+	$scope.dellPost = function(post) {
+		Posts.delete(post._id);
+
+		// $scope.posts.slice(postIndex, 1);
+	};
+
 }]);

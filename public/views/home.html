@@ -1,12 +1,12 @@
 <div>
 	<div class="navbar-header">
-		<a class="navbar-brand" href="" ng-click="changeState()">Add Post</a>
+		<a class="btn btn-danger" ng-click="changeState()">Add Post</a>
 	</div>
-	
+
 	<popup ng-show="isVisible"></popup>
 
 	<div class="jumbotron list-group">
-		<div class="list-group-item" ng-repeat="post in posts | orderBy:'createdOn'">  
+		<div class="list-group-item" ng-repeat="post in posts | orderBy:'date'">
 			<post-body></post-body>
 		</div>
 	</div>

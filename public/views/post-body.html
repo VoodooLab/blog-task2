@@ -1,8 +1,9 @@
 <div>
-	<img ng-src="{{post.img}}" alt="image for this post">
+	<img ng-src="{{post.image}}" alt="image for this post">
 	<h2>{{post.title}}</h2>
-	<cite>created by <strong>{{post.author}}</strong> on {{post.createdOn | date}}</site>
-	<p class="text">{{post.text}}</p>
-	<a ng-click="deletePost($index)">delete this post</a>
+	<cite>created by <strong>{{post.author}}</strong> on {{post.date | date}}</site>
+	<p class="text">{{post.body}}</p>
+	<a ng-click="dellPost(post)" class="btn btn-danger">delete this post</a>
+    <pre>{{post}}</pre>
 </div>
 
